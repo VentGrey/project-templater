@@ -4,7 +4,6 @@ use std::process::exit;
 /* Modules */
 mod project;
 
-
 /*
  *
  * Main function that handles arguments and dependencies on how to
