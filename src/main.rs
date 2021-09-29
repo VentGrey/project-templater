@@ -35,5 +35,23 @@ fn main() {
 }
 
 fn help() {
+    let ver: Option<&'static str> = option_env!("CARGO_PKG_VERSION");
+    let aut: Option<&'static str> = option_env!("CARGO_PKG_AUTHORS");
 
+    println!(
+        "project-templater ({})
+Deliver your college projects with style!
+Authors: [{}]
+License: [GPL-2.0]
+USAGE:
+    ptm [ARGS]
+ARGS:
+    new, --new, -new or -n        Creates a new project
+    help, --help, -help or -h     Displays this message
+For more information about the development of this program please see
+the README file included in:
+https://github.com/VentGrey/project-templater/blob/master/README.md",
+        ver.unwrap_or("unknown"),
+        aut.unwrap_or("none"),
+    );
 }
