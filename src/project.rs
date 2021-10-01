@@ -1,6 +1,18 @@
+use std::process::{Command, Stdio, exit};
+
 use scanrs::scanln;
 
+use crate::cproj;
+
 pub fn init() {
+
+    if !compatible() {
+        println!(
+            "Your system is NOT compatible with this program!",
+        );
+        exit(1);
+    }
+
     println!("Starting new project, please select your desired options:");
     println!(
         "What kind of project would you like to setup?
