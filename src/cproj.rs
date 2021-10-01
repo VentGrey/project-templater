@@ -1,11 +1,5 @@
-pub fn init() {
+pub fn init() {}
 
-}
+fn gen_source() {}
 
-fn gen_source() {
-
-}
-
-fn gen_conf() {
-
-}
+fn gen_conf() {}

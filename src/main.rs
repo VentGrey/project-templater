@@ -2,8 +2,8 @@ use std::env;
 use std::process::exit;
 
 /* Modules */
-mod project;
 mod cproj;
+mod project;
 /*
  *
  * Main function that handles arguments and dependencies on how to
