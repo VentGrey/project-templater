@@ -3,7 +3,7 @@ use std::process::exit;
 
 /* Modules */
 mod project;
-
+mod cproj;
 /*
  *
  * Main function that handles arguments and dependencies on how to
